@@ -1,0 +1,24 @@
+[project]
+name = "satellite-simulator-robot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "heisendelta",email = "ariya8.narayan7@outlook.jp"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4"
+dependencies = [
+    "keyboard (>=0.13.5,<0.14.0)",
+    "opencv-python (>=4.12.0.88,<5.0.0.0)",
+    "pyzbar (>=0.1.9,<0.2.0)",
+    "pupil-apriltags (>=1.0.0,<2.0.0)",
+    "aiohttp (>=3.13.2,<4.0.0)",
+    "flask (>=3.1.2,<4.0.0)",
+    "mss (>=10.1.0,<11.0.0)",
+    "pyserial (>=3.5,<4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
