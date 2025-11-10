@@ -54,6 +54,8 @@ def capture_browser_stream_wsl():
                         cv2.putText(frame, f"Frames: {frame_count}", (10, 30),
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
                         
+                        frame = cv2.flip(frame, 0)
+
                         qr_codes = detect_qr_codes(frame)
                         print("Number of QR Codes detected:", len(qr_codes))
 
